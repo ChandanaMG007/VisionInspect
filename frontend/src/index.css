@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --color-primary: #172A3A;
+  --color-primary-light: #203A4F;
+  --color-primary-dark: #0F1C27;
+
+  --color-secondary: #176B68;
+  --color-secondary-light: #208783;
+  --color-secondary-dark: #0F4D4B;
+
+  --color-app-bg: #F5F7F4;
+  --color-panel: #FFFFFF;
+  --color-border: #E2E8F0;
+  --color-border-subtle: #EDF2F7;
+
+  --color-status-normal: #1E6B42;
+  --color-status-normal-bg: #EDF7F1;
+  --color-status-normal-border: #C6E7D2;
+
+  --color-status-review: #B45309;
+  --color-status-review-bg: #FEF3C7;
+  --color-status-review-border: #FDE68A;
+
+  --color-status-defective: #B91C1C;
+  --color-status-defective-bg: #FEE2E2;
+  --color-status-defective-border: #FECACA;
+
+  --color-status-info: #2B6CB0;
+  --color-status-info-bg: #EBF8FF;
+  --color-status-info-border: #BEE3F8;
+}
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #172A3A;
+  background-color: #F5F7F4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #F5F7F4;
+  color: #172A3A;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Subtle scrollbars for industrial software aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F4F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
